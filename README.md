@@ -1,4 +1,4 @@
-# FakeNewsDetectionSystem
+#Objective
 
 
 Build a model that can differentiate between Real news and Fake news.
