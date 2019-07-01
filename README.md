@@ -24,5 +24,35 @@ The datasets used for this project were drawn from Kaggle. The training dataset 
            • 1: unreliable
            • 0: reliable
 
+## Feature Extraction And Preprocessing
+ * We perform some basic pre-processing of the data which produces a comma-separated list of words
+* This can be input into the Doc2Vec algorithm and Word Embedding
+* Doc2Vec algorithm will produce an 300-length embedding vector for each article
+* Word Embedding is used to create vectors for LSTM 
+
+# Results and Analysis
+## Algorithm’s Performance
+
+| Algorithm     | Accuracy      | Precision     | Recall        |F1-Score |
+| ------------- | ------------- |---------------|---------------|---------|
+| Naive Bayes   | 72            |      67       |  85           |  75     |
+| SVM           | 88            |      84       |  93           |  88     |
+| Neural Network| 90            |      86       |  94           |  89     |
+| LSTM          | 91            |      96       |  92           |  95     |
+
+## Conclusion
+
+* The LSTM treats text as serialized objects. This makes LSTM far more efficient and accurate. 
+* The major difference here is that the prediction made by LSTM considers not only the text but also the order of the text. 
+* Therefore the most accurate algorithm for classification is LSTM
+
+## Prediction of LSTM
+Since LSTM is more accurate a LSTM model is build to preditc whether a given news is fake or real 
+
+
+
+
+
+
 
 
